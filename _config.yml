@@ -1,6 +1,6 @@
 # General
 name: "RStats 2016"
-description: "Peer-led Data Analysis in RSS"
+description: "Peer-led Data Analysis in R"
 baseurl: "/rstats_fall2016"
 future: true
 
