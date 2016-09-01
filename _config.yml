@@ -1,7 +1,7 @@
 # General
-name: "Biocomputing 2016"
-description: "Peer-led Introduction to Computational Biology"
-baseurl: "/Biocomputing_Spring2016"
+name: "RStats 2016"
+description: "Peer-led Data Analysis in RSS"
+baseurl: "/rstats_fall2016"
 future: true
 
 
