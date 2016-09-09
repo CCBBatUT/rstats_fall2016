@@ -1,0 +1,123 @@
+---
+title: "Introduction to R and R Markdown"
+author: "Spencer Fox"
+date: "September 9, 2016"
+output: html_document
+---
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML and PDF documents. R Markdown documents are useful for interspersing text with `code`. There are many ways to write formatted text within markdown, and RStudio hosts a good [cheatsheet (See section #3)](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf).
+
+You run R code within chunks either line-by-line (ctrl-enter or cmd-enter), or all at once (see keyboard shortcuts). To do so, place your cursor on a line of code, and then press the keys to run the line. Here is the chunk of R code:
+
+
+```{r}
+# Comments are denoted with a "#", and all text following a "#" is not run in R
+
+# If you don't already have the package "rgl" installed on your computer, uncomment the next line and run it
+# install.packages('rgl')
+
+library(rgl)
+
+## First open a blank plotting screen
+open3d()
+
+## Get Churyumov–Gerasimenko comet 3d data from online
+## This is the comet the Philae lander successfully landed on in 2014!!
+comet <- readOBJ(url("http://sci.esa.int/science-e/www/object/doc.cfm?fobjectid=54726"))
+
+## Plot and color the comet
+shade3d(comet, col="gray")
+```
+
+Try to go back and then change the color of the comet.
+
+
+### Extra exercise
+Find different 3d data/model, and plot them out in a new chunk. You may find some interesting examples to follow along with [Here](http://www.rforscience.com/rpackages/visualisation/plot3d/)
+
+
+---------------------------------------------
+
+## 2nd Exercise Session
+Now that you know how to use R Markdown and have learned about variables and functions, let's play around with vectors and data.
+
+```{r}
+5 + 5
+
+x <- 10 + 3
+y = 9 * 2
+z <- x + y
+z
+
+# After running those lines, look at the environment panel in RStudio. What do you notice?
+
+
+# The following shows how to create a vector of all the whole numbers between 1 and 10
+sequence <- seq(from = 1, to = 10, by = 1)
+sequence
+
+# Now make a new sequence for all the odd numbers from 0 to 100 below
+
+
+# Find the mean() and sum() for your new sequence.
+
+
+```
+
+R also comes with many built in data frames that can be used by everyone without loading in data. Let's take a look at the CO2 dataset. I copied this information from the information found by typing `?CO2`: "The CO2 uptake of six plants from Quebec and six plants from Mississippi was measured at several levels of ambient CO2 concentration. Half the plants of each type were chilled overnight before the experiment was conducted."
+
+```{r}
+# the function head() allows you to see a snapshot of the data frame
+head(CO2)
+
+# We can look at specific columns of the data frame using "$"
+# Let's look at the unique plant IDs:
+CO2$Plant
+
+# Let's see if there is any difference between Quebec and Mississippi plants
+# the function plot is written in the form plot(x = x_variable, y = y_variable)
+# Plot the plant type on the x axis, and the CO2 uptake on the y axis 
+# Remember the $ is used to extract dataframe columns
+
+
+```
+
+### Extra exercise
+Try plotting one boxplot that shows the plant uptake and separates by the plant types, treatment, and CO2 concentration. Hint: You need to create a factor with all of the combinations as levels, or the `boxplot()` function might be easier to use.
+
+
+---------------------------------------------
+
+## 3rd Exercise Session
+Most of the time your data won't be provided in a nice clean data frame from an R package. This exercise is supposed to help you learn how to read data into R, by first having you read in data with the base R function `read.csv()`, and then having you learn how to use the `readr` package to do so.
+
+```{r}
+# Use the function read.csv() to read in the example data frame
+# Insert the file path as a string to the function:
+# As an example, my file path is: 
+# "/Users/spencerfox/projects/rstats_fall2016/files/1_intro_r/ex1_calories.csv"
+
+
+# Plot out the consumed calories as a function of the date 
+# (warning this graph is going to look horrendous)
+
+
+
+# Install and load the R package, readr
+# Now use the read_csv() function to read in the data using the same
+# file path as read.csv(), and then plot out the data
+
+
+```
+
+
+### Extra exercise
+You may have noticed that the readr package still reads in the calories column in as a string. This is because of the presence of an `X` in the column. While you may have meant missing data (NA), R sees it as a string, and then forces the whole column into a string. Take a look at the `?read_csv` documentation, and see if you can successfully get readr to read in the calories column as integers.
+
+If you still have time after that, try to get the base R `read.csv()` to read the data frame in correctly. Good Luck!
+
+
+
+
