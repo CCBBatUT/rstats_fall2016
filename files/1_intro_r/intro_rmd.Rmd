@@ -67,6 +67,7 @@ Try to make a new sequence for all the odd numbers from 0 to 100 in the next chu
 
 ```{r}
 # R code here
+odd <- seq(from=1, to=100, by=2)
 
 ```
 
@@ -74,6 +75,8 @@ Now use the functions `mean()` and `sum()` to find the mean and sum of your new 
 
 ```{r}
 # R code here
+mean(odd)
+sum(odd)
 
 ```
 
@@ -92,7 +95,7 @@ Let's see if there is any difference between **Quebec** and **Mississippi** plan
 
 ```{r}
 # R code here
-
+plot(x = CO2$Type, y = CO2$uptake)
 ```
 
 
@@ -116,7 +119,7 @@ Once you get it reading the data in properly, save the data to a variable `bad_r
 
 ```{r}
 # R code here
-
+read <- read.csv("/Users/spencerfox/projects/rstats_fall2016/files/1_intro_r/ex1_calories.csv", na.strings = c("X"))
 ```
 
 
