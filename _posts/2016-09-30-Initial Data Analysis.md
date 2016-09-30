@@ -2,8 +2,8 @@
 layout: post
 title: "Initial data analysis"
 instructor: Katie Lyons
-permalink: /intro_stats/
-materials: files/intro_stats.zip
+permalink: /data_analysis_101/
+materials: files/4_data_analysis.zip
 ---
 
-Coming soon to a website near you.
+This week I will be reviewing some of the previous weeks' material, as well as introducing some simple first-pass plotting and analysis.
