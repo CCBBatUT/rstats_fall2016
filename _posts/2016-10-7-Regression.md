@@ -3,7 +3,7 @@ layout: post
 title: "Tidy Regression"
 instructor: Ben Jack
 permalink: /regression/
-materials: files/regression.zip
+materials: files/tidy_regression.zip
 ---
 
-Coming soon to a website near you.
+Please see the .zip file for  the slides and R Markdown worksheet corresponding to this lesson.
