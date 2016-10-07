@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Reproducibility in Research"
-instructor: Spencer Fox
+instructor: TBD
 permalink: /reproducibility/
 materials: files/repreoducibility.zip
 ---
