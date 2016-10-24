@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bayesian analysis"
-instructor: Postponed
+instructor: Nate Pope
 permalink: /bayesian/
 materials: files/bayesian.zip
 ---
