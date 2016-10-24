@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Free"
-instructor: TBD
-permalink: /free/
-materials: files/free.zip
+title: "Simulation in R"
+instructor: Shankari Subramaniam
+permalink: /simulation/
+materials: files/simulation.zip
 ---
 
 Coming soon to a website near you.
