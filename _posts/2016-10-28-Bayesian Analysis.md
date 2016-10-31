@@ -6,4 +6,4 @@ permalink: /bayesian/
 materials: files/bayesian.zip
 ---
 
-Coming soon to a website near you.
+The slides for the presentation can be found [here](https://github.com/CCBBatUT/rstats_fall2016/blob/gh-pages/files/bayesian_pres.html)
