@@ -3,7 +3,11 @@ layout: post
 title: "Advanced ggplot2"
 instructor: Claire McWhite
 permalink: /advggplot2/
-materials: files/advggplot2.zip
+
+materials: files/9_advggplot2.zip
 ---
 
-Coming soon to a website near you.
+
+A demonstration of the process of designing and created a more complicated figure using ggplot2
+
+
