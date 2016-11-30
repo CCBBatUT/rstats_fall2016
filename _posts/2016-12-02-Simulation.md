@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Simulation in R"
-instructor: Shankari Subramaniam
+instructor: Cancelled
 permalink: /simulation/
 materials: files/simulation.zip
 ---
